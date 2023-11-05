@@ -1,0 +1,25 @@
+#Finding Frequent Itemsets
+1. Naive Algorithm
+- Approach 1: Count all pairs using a matrix
+            : Triangular matrix 활용
+- Approach 2: Keep a table of triples[i, j, c] = "the count of the pair of items {i, j} is c"
+
+2. A-Priori Algorithm
+- Key idea: monotonicity
+- Pass 1: Read baskets and count in main meory the # of occurrences of each individual item
+- Pass 2: Read baskets again and keep track of the count of only those pairs where both elements are frequent(from pass1)
+
+3. PCY Algorithm
+- Pass 1: In addition to item counts, maintain a hash table with as many buckets as fit in memory
+- Pass 2: Replace the buckets by a vit-vector
+
+
+#Frequent Itemsets in <= 2 Passes
+1. Random Sampling Algorithm
+- Avoid false positives
+
+2. Son Algorithm
+- Repeatedly read small subsets of the baskets into main memory and run an in-memory algorithm to find all frequent itemsets
+
+3. Toivonen's Algorithm
+- Remove false negative using negative border
