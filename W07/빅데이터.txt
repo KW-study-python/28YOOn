@@ -1,0 +1,23 @@
+#Clustering 방법
+1. Hierarchical
+- buttom up 방식으로 비슷하면 합치는 과정을 반복적으로 수행
+
+2. Point assignment
+
+
+#Hierarchical Clustering
+- Key operation: Repeatedly merge two "nearest" clusters
+
+#k-means Clustering
+- k: 클러스터 개수
+- 최적해 구하기 힘들기에 근사해를 구함
+- 각 점을 가장 가까운 center로 보내기에 빠름
+- 최적해를 보장하지 않음, 무한루프 가능성
+- 단점: 초기에 고른 centroids에 의존할 가능성이 있음 >> k-means++ 방식으로 해결
+
+#k-means++
+- 랜덤하게 점을 찍을 때 이미 선택된 점을 고려
+- 점을 하나 선택 후, 그 점과의 거리의 제곱한 것의 확률로 점을 선택
+
+- k를 사용자가 지정해야 함
+- k가 클수록 센터까지의 거리가 작아짐
