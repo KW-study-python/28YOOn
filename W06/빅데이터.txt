@@ -1,0 +1,29 @@
+#Finding Similar Items
+
+#LSH(locality sensitive hashing)
+-	비슷한걸 빠르게 찾아냄
+-	아이템 버킷에
+-	해쉬 펑션
+-	비교 조금만 해도 됨
+-	FN 발생할 수도 있음
+
+1.	Shingling 
+-	문서를 집합으로 
+-	집합길이 매우 길어질수도
+-	집합으로 표현하면 자카드 유사도 통해 얼마나 비슷한지 수치로 나타내기 쉬움
+
+2.	Minhashing
+-	큰 집합을 짧은 시그니쳐로 
+-	유사도는 유지하면서 짧은 시그니처로 변경
+
+Tokens
+-	4바이트로 해시
+
+Jaccard similarity
+-	두 집합 사이의 유사도
+-	Sim(C1, C2) = | C1 n C2 | / | C1 u C2 |
+
+Minhashing 
+-	행 순서 뒤죽박죽
+-	랜덤으로 물어봄
+-	처음으로 나오는 1이 몇번째에 발생했는지
