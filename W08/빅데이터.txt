@@ -1,0 +1,13 @@
+[빅데이터]
+
+Dimensionality Reduction
+
+- 데이터의 양이 많을 때, 중요한 정보는 최대한 유지하며 벡터의 차원을 줄임 
+
+ 
+
+SVD(Singular Value Decomposition)
+
+- 차원 감소 방법 중 하나인 특잇값 분해 방법
+
+- 임의의 행렬을 세 행렬의 곱으로 분해
